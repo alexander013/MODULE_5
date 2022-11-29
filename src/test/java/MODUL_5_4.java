@@ -29,7 +29,7 @@ public class MODUL_5_4 {
         driver.navigate().to("http://qajava.skillbox.ru/index.html");
 //        Локаторы на главной странице для элемента <a href="" test-info="about-us">О магазине</a>.
 //        Осуществите поиск только по атрибуту test-info, равному about-us.
-        var O_MagazineElementLocator = By.cssSelector("[test-info=about-us']");
+        var O_MagazineElementLocator = By.cssSelector("[test-info='about-us']");
 //        Локатор на главной странице для всех элементов с тегом a
 //        и с атрибутом href с пустым значением, то есть равным «».
         var Teg_A_hrefElementLocator = By.cssSelector("a[href='']");
