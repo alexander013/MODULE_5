@@ -1,4 +1,5 @@
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -42,7 +43,6 @@ public class MODUL_5_4 {
         var MainendElementLocator = By.cssSelector("[class$='main']");
 //        Локатор на главной странице для всех элементов с тегом a и с атрибутом class, содержащим в себе слово menu.
         var VezdeMainElementLocator = By.cssSelector("[class*='menu']");
-
     }
 
     @Test
@@ -73,8 +73,6 @@ public class MODUL_5_4 {
         driver.navigate().to("http://qajava.skillbox.ru/search.html");
 //        На странице поиска найдите любые теги,
 //        которые расположены после <div class="filter-container"> (необязательно ближайший сосед).
-        var TegiPosleFilterContainer_1 = By.cssSelector("div[class='filter-container'] + *");
-        var TegiPosleFilterContainer_2 = By.cssSelector("div[class='filter-container'] ~ *");
         var TegiPosleFilterContainer_3 = By.cssSelector("div[class='content'] + *");
     }
 
@@ -89,9 +87,9 @@ public class MODUL_5_4 {
         var Teg_1_H_ElementLocator = By.cssSelector("section.important-section-block[for='main-header-page'] > *:nth-child(1)");
 //        Последний тег p, находящийся сразу на первом уровне вложенности внутри <form class="form" id="login-form">.
 //        Используйте поиск по child.
-        var Teg_P_poslednijElementLocator = By.cssSelector("form.form#login-form > *:last-child");
+        var Teg_P_poslednijElementLocator = By.cssSelector("form.form#login-form > p:last-child");
 //        Любой тег, который является третьим дочерним элементом первого уровня тега <body>. Используйте поиск по child.
-        var TegBodyLocator = By.cssSelector("body > *:nth-child(4)");
+        var TegBodyLocator = By.cssSelector("body > *:nth-child(3)");
 //        Все элементы с тегом <a>, которые являются первым элементом своего родителя <div class="footer__menuList">.
 //        Используйте поиск по type.
         var VseTegiAElementLocator = By.cssSelector("div.footer__menuList > a:nth-of-type(1)");
