@@ -73,7 +73,7 @@ public class MODUL_5_4 {
         driver.navigate().to("http://qajava.skillbox.ru/search.html");
 //        На странице поиска найдите любые теги,
 //        которые расположены после <div class="filter-container"> (необязательно ближайший сосед).
-        var TegiPosleFilterContainer_3 = By.cssSelector("div[class='content'] + *");
+        var TegiPosleFilterContainer_3 = By.cssSelector("div[class='filter-container'] ~ *");
     }
 
 //    Задание № 3
